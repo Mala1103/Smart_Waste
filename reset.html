@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <div class="container">
+        <div class="reset-box">
+            <h2><img src="lock-icon.png" alt="Lock Icon"> Reset Password</h2>
+            <ul class="password-requirements">
+                <li>At least 8 characters</li>
+                <li>At least one uppercase (A-Z)</li>
+                <li>At least one lowercase (a-z)</li>
+                <li>At least one digit (0-9)</li>
+                <li>At least one special character (e.g., @, #, !)</li>
+            </ul>
+            <form id="reset-form">
+                <div class="input-group">
+                    <label for="new-password">New password</label>
+                    <input type="password" id="new-password" name="new-password" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirm-password">Re-enter password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <button type="submit">Reset Password</button>
+            </form>
+            <a href="index.html" class="back-to-signin">Back to Sign in</a>
+        </div>
+    </div>
+    <script src="reset.js"></script>
+</body>
+</html>

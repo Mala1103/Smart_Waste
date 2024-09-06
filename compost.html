@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wet Waste Analysis</title>
+    <link rel="stylesheet" href="compost.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Compostability Analysis</h1>
+        </div>
+        <div class="upload-section">
+            <button id="upload-button" class="upload-label">
+                <img src="upload-icon.png" alt="Upload Icon" class="upload-icon">
+                <p>Upload image of your Waste</p>
+            </button>
+        </div>
+        <div class="analysis-section">
+            <p>Analysis:</p>
+            <p>Compostable % <span class="icon">&#x1F5D1;</span>: <span id="waste-volume">-</span></p>
+            <p>Points Earned <span class="icon">&#9733;</span>: <span id="points-earned">-</span></p>
+        </div>
+    </div>
+
+    <!-- Hidden file input fields -->
+    <input type="file" id="upload-image" accept="image/*" hidden>
+    <input type="file" id="camera-image" accept="image/*" capture="camera" hidden>
+
+    <!-- Modal for choosing upload option -->
+    <div id="upload-modal" class="modal">
+        <div class="modal-content">
+            <p>Select Image Source</p>
+            <button id="choose-storage">Upload from Storage</button>
+            <button id="choose-camera">Use Camera</button>
+        </div>
+    </div>
+
+    <script src="compost.js"></script>
+</body>
+</html>

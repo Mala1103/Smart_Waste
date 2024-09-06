@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Waste Management</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <input type="text" class="search-bar" placeholder="Search">
+            <div class="badge-icon" onclick="toggleBadgeMenu()">&#x1F3C6;</div>
+        </div>
+
+        <div id="dropdown-menu" class="dropdown-menu">
+            <div class="user-info">
+                <img src="user-avatar.png" alt="User Avatar">
+                <p>Username</p>
+                <p>Points earned <span class="points-icon">&#x1F31E;</span></p>
+            </div>
+            <ul>
+                <li>Home <span class="icon">&#x1F3E0;</span></li>
+                <li>Leaderboard <span class="icon">&#x1F3C6;</span></li>
+                <li>Profile setting <span class="icon">&#x2699;</span></li>
+                <li>Logout <span class="icon">&#x1F6AA;</span></li>
+            </ul>
+        </div>
+
+        <div id="badge-dropdown-menu" class="badge-dropdown-menu">
+            <div class="user-info">
+                <img src="user-avatar.png" alt="User Avatar">
+                <p>USername</p>
+                <p>Total Points earned <span class="points-icon">&#x1F31E;</span> :</p>
+            </div>
+            <ul>
+                <li>Wet Waste Analysis <span class="icon">&#x1F52C;</span> :</li>
+                <li>Dry Waste Analysis <span class="icon">&#x1F4E6;</span> :</li>
+                <li>Compost Analysis <span class="icon">&#x1F52C;</span> :</li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="info-box">
+                <h3>“Did you Know”</h3>
+                <p>India generates approximately 62 million tonnes of waste annually, projected to reach 165 million tonnes by 2030</p>
+            </div>
+
+            <div class="quote-box">
+                <p>Be the change<br>you wish<br>to see in the<br>WORLD</p>
+            </div>
+
+            <div class="options">
+                <h4>What are you looking to do today ?</h4>
+                <ul>
+                    <li>– <a href="wet.html">Wet Waste Analysis</a></li>
+                    <li>–<a href="dry.html">Dry Waste Analysis</a></li>
+                    <li>– <a href="compost.html">Compostability Analysis</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>
